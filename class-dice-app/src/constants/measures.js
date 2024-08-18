@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
 
-export const width = Dimensions.get("window").width;
-export const height = Dimensions.get("window").height;
+const { width, height } = Dimensions.get("window");
+
+export { width, height };
