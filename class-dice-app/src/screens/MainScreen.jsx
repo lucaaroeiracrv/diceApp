@@ -153,8 +153,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   historyTextContainer: {
-    height: 150, // Altura fixa para o container do histórico
-    width: '80%', // Largura do container do histórico
+    height: 150, 
+    width: '80%', 
     marginTop: 20,
     padding: 10,
     backgroundColor: 'white',
