@@ -1,26 +1,25 @@
 import React from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function DiceButton({ dice, rollDice }) {
+export default function DiceButton({ dice, rollDice, imageSource }) {
   return (
     <TouchableOpacity onPress={rollDice} style={styles.button}>
-      <Text style={styles.buttonText}>{dice}</Text>
+      <Image source={imageSource} style={styles.image} />
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    width: 70,
-    height: 70,
-    backgroundColor: '#000',
+    width: 80,
+    height: 80  ,
     justifyContent: 'center',
     alignItems: 'center',
     margin: 10,
-    borderRadius: 10,
   },
-  buttonText: {
-    color: 'white',
-    fontSize: 24,
+  image: {
+    width: 80, // Ajuste o tamanho da imagem conforme necessário
+    height: 80,
+    resizeMode: 'contain',
   },
 });

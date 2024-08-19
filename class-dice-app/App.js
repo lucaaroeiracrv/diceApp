@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import MainScreen from "./src/screens/MainScreen";
-
+import { width, height } from "./src/constants/measures";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -15,5 +15,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    width: width,
+    height: height,
   },
 });
